@@ -1,0 +1,717 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --maincolor: #ffa028;
+}
+
+/* -----------------sec-2------------------------ */
+.carousel-1{
+  background-image: url(https://www.al-ijazah.com/img/kyaw-tun-UvL9JrLkagM-unsplash.jpg);
+  height: 46.7vw;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  background-position: center;
+}
+.carousel-2{
+  background-image: url(https://www.al-ijazah.com/img/wetransfer__images/Prima-Kitchen1_OA.jpg);
+  height: 46.7vw;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-text{
+  position: absolute;
+  text-align: right;
+  color: #fff;
+  padding: 18.17vw 122.396px;
+  background-color: rgb(0 0 0 / 30%);
+}
+.heading-1{
+  margin: 9.997px;
+  font-size: 42.24px;
+}
+.heading-1P{
+  font-size: 23.4px;
+}
+/* ---------------------------------------sec-3--------------------------------- */
+.sec-3{
+  background-color: #f8f8f8;
+  padding: 5.005vw 0 0 0;
+}
+.txt-contain-S3{
+  flex: 0 0 auto;
+  padding: 0 12px;
+}
+.sec-3sub-heading{
+  color: var(--maincolor);
+  font-size: 23.408px;
+  font-weight: 500;
+  margin-bottom: 17.248px;
+  margin-top: 140px;
+}
+.img-contain-S3{
+  padding: 0 0 17.248px;
+  margin: 0 42px;
+  position: relative;
+  transition: .7s;
+}
+.img-contain-S3:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+.sec3img{
+  display: block;
+  width: 25vw;
+  margin: 0 30.792px;
+}
+.sec3img1{
+  border: #fff solid 9.33px;
+  top: -100px;
+  right: -210px;
+  width: 15vw;
+  position: relative;
+}
+
+
+/* ----------------------------------------------sec-4-------------------------- */
+.sec-4{
+  padding: 64.064px 0;
+}
+.boxcontainer{
+  margin: 32px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 19px;
+}
+.box{
+  padding: 36.96px;
+  border: #d3d3d3 solid .2px;
+  border-bottom: var(--maincolor) solid 3px;
+}
+.box:hover {
+  background-color: rgb(255 244 231);
+}
+.box:hover .sec4img{
+  background-color: white;
+}
+.sec4img{
+  height: 110.2px;
+  width: 110.2px;
+  background-color: rgb(255 244 231);
+  border: var(--maincolor) dotted 0.1px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  position: relative;
+  animation: zoominout 2.5s ease infinite;
+}
+.sec4img img {
+  width: 100%;
+}
+@keyframes zoominout{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.sec4img:hover{
+  background-color: white;
+}
+.column-title{
+  font-size: 23.04px;
+  margin: 0 0 8px;
+}
+.box:hover>.column-title{
+  color: var(--maincolor);
+}
+.button-1{
+  display: inline-block;                                 
+  background-color: var(--maincolor);
+  color: #222;
+  font-weight: bold;
+  font-size: 16.64px;
+  border-radius: 50px;
+  margin: auto;
+  padding: 10.472px 36.960px;
+  border: none;
+  text-decoration: none;
+  transition: transform 1s ease;
+  position: relative;
+  cursor: pointer;
+
+}
+.button:hover{
+  color: #222;
+  transform: scale(1.1);
+  z-index: 1;
+}
+.fa-solid{
+  font-weight: 900;
+}
+/* ------------------------sec-5-------------------- */
+.sec-5{
+  background: url(/public/image/sec5img.png);
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  padding: 64.064px 0;
+  color: white;
+}
+.value-heading{
+  font-size: 22.176px;
+  margin: 0 0 8px;
+}
+.value-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.value-columns {
+  width: 22%;
+  text-align: center;
+}
+.progress-bar-container {
+  width: 80%;
+  max-width: 250px;
+  margin: 0 auto 30px;
+}
+.d-flex>div>h4{
+  text-align: center;
+  font-size: 20px;
+}
+.data{
+  padding-left: 60px;
+}
+.progress-container .data{
+  width: 14.09em;
+  height: 210px;
+}
+.progress{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  background-image: conic-gradient(var(--maincolor) 342deg, #d6d6d6 0deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.progress::before{
+  content: "";
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: #333;
+}
+.progress span{
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--maincolor);
+  text-anchor: middle;
+}
+.progress-2{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  background-image: conic-gradient(var(--maincolor) 180deg, #d6d6d6 0deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.progress-2::before{
+  content: "";
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: #333;
+}
+.progress-2 span{
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--maincolor);
+  text-anchor: middle;
+}
+.progress-3{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  background-image: conic-gradient(var(--maincolor) 360deg, #d6d6d6 0deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.progress-3::before{
+  content: "";
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: #333;
+}
+.progress-3 span{
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--maincolor);
+  text-anchor: middle;
+}
+.progress-4{
+  width: 100%;
+  height: 80%;
+  border-radius: 50%;
+  background-image: conic-gradient(var(--maincolor) 270deg, #d6d6d6 0deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.progress-4::before{
+  content: "";
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: #333;
+}
+.progress-4 span{
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--maincolor);
+  text-anchor: middle;
+}
+.pro-data{
+  padding: 0 0 0 50px;
+}
+
+/* ------------------------sec-6 gallary------------------------- */
+.sec-6{
+  padding: 64.064px 0;
+  background-color: #f8f8f8;
+}
+.sec-6img{
+  width: 146.3px;
+  height: 280px;
+}
+
+
+/* -------------------------------------------------------DONE----------------------------- */
+@media screen and (max-width: 575px){
+  .container{
+    padding: 0 3.478vw !important;
+    margin: 0 !important;
+  }
+  .c{
+    padding: 0 3.478vw !important;
+    margin: 0 !important;
+  }
+  .paragraph{
+    font-size: 14px !important;
+    margin-bottom: 0;
+  }
+  .heading{
+    font-size: 20px !important;
+    margin-bottom: 20px;
+  }
+  .logo{
+    font-size: 25px !important;
+  }
+  .carousel-text{
+    padding: 33.1vw 10vw;
+    align-items: center;
+    text-align: center;
+  }
+  .carousel-1,.carousel-2{
+    height: 521px !important;
+    width: 100%;
+  }
+  .heading-1{
+    font-size: 24px;
+  }
+  .heading-1P{
+      font-size: 14px;
+  }
+  .sec-3sub-heading{
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .img-contain-S3{
+    margin: auto !important;
+    width: 60vw !important;
+    margin-top: 30px !important;
+    padding: 0;
+  }
+  .sec3img{
+    margin: 0 !important;
+    width: 55vw;
+  }
+  .sec3img1{
+    width: 40vw;
+    top: -30.488vw;
+    right: -22.997vw;
+  }
+  .boxcontainer{
+    margin: 0 0 17.220px;
+    flex-direction: column;
+  }
+  .sec4img{
+    height: 20vw !important;
+    width: 20vw !important;
+  }
+  .box{
+    margin-bottom: 17.220px;
+    padding: 20px;
+  }
+  .sec4img{
+    width: 10vw;
+    height: 10vw;
+  }
+  .column-title{
+    font-size: 2.2vw;
+  }
+  .button-1{
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .pro-data{
+    padding: 0 0 20px 10px !important;
+  }
+  .progress-container .data {
+    width: 83.875vw !important;
+    height: 35.889vw !important;
+  }
+  .data{
+    padding: 0 27.132vw !important;
+  }
+  .button1{
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  .footer-contact{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .footer-link{
+    font-size: 14px;
+  }
+  .address{
+    margin: 0!important;
+  }
+  .sub-heading{
+    font-size: 15px;
+  }
+  .button2{
+    font-size: 14px;
+    padding: 15px 30px;
+  }
+  .copy{
+    font-size: 14px;
+  }
+  .copyright{
+    padding: 11.49px;
+  }
+  inpute{
+    width: 100%;
+  }
+}
+
+/* -------------------------------------------------------DONE----------------------------- */
+@media screen and (min-width: 576px)  and (max-width: 768px) {
+  .container{
+    justify-content: space-between !important;
+  }
+  .container{
+    padding: 0 5.002vw !important;
+    margin: 0 !important;
+  }
+  .c{
+    padding: 0 5.002vw !important;
+    margin: 0 !important;
+  }
+  .paragraph{
+    font-size: 2.2vw !important;
+  }
+  .heading{
+    font-size: 3.8vw !important;
+  }
+  .logo{
+    font-size: 3.8vw;
+  }
+  .carousel-text{
+    padding: 27.4vw 10.9vw;
+  }
+  .carousel-1,.carousel-2{
+    height: 521px !important ;
+    width: 100%;
+  }
+  .heading-1{
+    font-size: 29.184px !important;
+  }
+  .heading-1P{
+      font-size: 18.432px !important;
+  }
+  .img-contain-S3{
+    margin: 0 auto !important;
+    width: 30vw;
+  }
+  .sec3img{
+    width: 25vw !important;
+    margin: auto;
+  }
+  .sec3img1{
+    width: 15vw !important;
+    top: -11.13vw !important;
+    right: -21.739vw !important;
+  }
+  .sec-3sub-heading{
+    font-size: 2.2vw;
+    margin-top: 0 !important;
+  }
+  .boxcontainer{
+    margin: 3.953vw 0 !important;
+  }
+  .box{
+    width: 32%;
+    padding: 2.604vw;
+  }
+  .sec4img{
+    width: 10vw;
+    height: 10vw;
+  }
+  .column-title{
+    font-size: 2.2vw;
+  }
+  .button-1{
+    font-size: 2.2vw;
+  }
+  .value-heading{
+    font-size: 2.4vw;
+  }
+  .pro-data{
+    padding: 0 0 2.604vw 15.115vw !important;
+  }
+  .progress-container .data {
+    width: 40.688vw !important;
+    height: 34.948vw !important;
+  }
+  .data{
+    padding-left: 12.24vw !important;
+  }
+  .button1{
+    font-size: 2.194vw;
+    padding: 1.631vw 3.391vw;
+  }
+  .owl-item img {
+    width: 80%;
+    margin: 1.355vw 4.328vw;
+    padding: 2.604vw;
+}
+  .footer-contact{
+    font-size: 2.194vw;
+    margin-bottom: 1.696vw;
+  }
+  .address{
+    margin: 0!important;
+  }
+  .sub-heading{
+    font-size: 2.8vw;
+  }
+  .button2{
+    font-size: 2.2vw;
+    padding: 1.596vw 3.391vw;
+  }
+  .copy{
+    font-size: 1.9vw;
+  }
+  .copyright{
+    padding: 1.496vw;
+  }
+}
+
+/* -------------------------------------------------------DONE----------------------------- */
+@media screen and (min-width: 769px) and (max-width: 991px){
+  .container{
+    max-width: 90% !important;
+    margin: 0 4.995vw !important;
+  }
+  .c{
+    max-width: 90% !important;
+    margin: 0 4.995vw !important;
+  }
+  .logo{
+    font-size: 3.8vw;
+  }
+  .nav-link{
+    font-size: 1.7vw;
+  }
+  .heading{
+    font-size: 3.4vw !important;
+  }
+  .paragraph{
+    font-size: 1.8vw !important;
+  }
+  .carousel-1,.carousel-2{
+    height: 688px !important;
+  }
+  .carousel-text{
+    padding: 29.3vw 7.5vw;
+    /* top: 107px; */
+  }
+  .heading-1{
+    font-size: 37.658px;
+    padding-right: 22px;
+  }
+  .heading-1P{
+    font-size: 23.784px;
+    padding-right: 22px;
+  }
+  .sec-3sub-heading{
+    font-size: 2.6vw;
+    margin-top: 0 !important;
+  }
+  .column-title{
+    font-size: 2.2vw;
+  }
+  /* .boxcontainer{
+    margin: 30.36px 0 !important;
+  }
+  .box{
+    width: 32%;
+    padding: 20px;
+  }
+  .sec4img{
+    width: 10vw;
+    height: 10vw;
+  } */
+  /* .button-1{
+    font-size: 2.2vw;
+  } */
+  .pro-data{
+    padding-left: 22px;
+  }
+  .progress-container .data {
+    width: 161.44px;
+    height: 169.271px;
+  }
+  .data{
+    padding-left: 21px;
+  }
+  /* .button1{
+    font-size: 16.852px;
+    padding: 12.256px 26.044px;
+  } */
+  .sub-heading{
+    font-size: 2.6vw;
+  }
+  .footer-link{
+    font-size: 1.8vw;
+  }
+  .footer-contact{
+    font-size: 1.7vw;
+  }
+  .address{
+    font-size: 1.7vw;
+  }
+  /* .button2{
+    font-size: 2.2vw;
+    padding: 12.256px 26.044px;
+  } */
+  .copy{
+    font-size: 1.7vw;
+  }
+}
+
+/* -------------------------------------------------------DONE----------------------------- */
+@media screen and (min-width:1285px) {
+  .container {
+    margin: 0 10.002vw;
+    padding: 0 0.934vw;
+  }
+  .c {
+    margin: 0 10.002vw;
+    padding: 0 0.934vw;
+  }
+  .logo{
+    font-size: 3vw !important;
+  }
+  .nav-link{
+    font-size: 1vw !important;
+  }
+  .heading-1{
+    font-size: 2.8vw !important;
+  }
+  .heading-1P{
+    font-size: 1.4vw !important;
+  }
+  .heading{
+    font-size: 2.8vw !important;
+  }
+  .paragraph{
+    font-size: 1vw !important;
+  }
+  .sec-3sub-heading{
+    font-size: 1.9vw !important;
+  }
+  .sec3img{
+    margin: 0 2.406vw !important;
+  }
+  .sec3img1{
+    top: -7.813vw !important;
+    right: -16.406vw !important;
+  }
+  .column-title{
+    font-size: 1.6vw !important;
+  }
+  .box{
+    width: 33% !important;
+  }
+  .progress-container .data {
+    width: 18.75vw !important;
+    height: 17.75vw !important;
+  }
+  .data {
+    padding-left: 4.788vw !important;
+  }
+  .data span{
+    font-size: 40px !important;
+  }
+  .pro-data{
+    padding: 0 0 0 4vw !important;
+  }
+  .value-columns{
+    font-size: 1.4vw !important;
+  }
+  .sub-heading{
+    font-size: 1.9vw !important;
+  }
+  .footer-link{
+    font-size: 1.3vw !important;
+  }
+  .footer-contact{
+    font-size: 1.3vw !important;
+  }
+  .address{
+    font-size: 1.3vw !important;
+  }
+  .copy{
+    font-size: 1vw !important;
+  }
+}

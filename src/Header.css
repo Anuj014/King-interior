@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --maincolor: #ffa028;
+  }
+  .navbar>.container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    }
+  .heading {
+    font-size: 35.84px;
+    margin: 0 0 34.496px;
+    padding: 0 0 17.248px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    position: relative;
+  }
+  .heading::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: #fab4a2;
+    bottom: 0;
+    left: 0;
+    right: 35px;
+    margin: auto;
+  }
+  .heading::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 32px;
+    background-color: var(--maincolor);
+    bottom: 0;
+    margin: 0 auto;
+    left: 95px;
+    right: 0;
+  }
+  .hspace{
+    padding: 0 9vw;
+  }
+  .header-space{
+    height: 6vh;
+  }
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  .paragraph{
+    font-size: 1.3vw;
+  }
+  /*------------------------------- navbar sec-1 done----------------------- */
+  .fixed-top{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+  .logo{
+    color: var(--maincolor) !important;
+    font-size: 3.3vw;
+    font-weight: bold;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-size: 1vw !important;
+  }
+  a.nav-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    font-size: 1vw;
+    padding: 8px;
+  }
+  .navbar-nav{
+    margin: 0 0 0 29.39vw !important;
+    padding-left: 0 ;
+  }
+  .ms-auto{
+    margin-left: auto !important;
+  }
+  .nav-link::after{
+    background: black;
+    bottom: 0;
+      content: "";
+      display: block;
+      height: .313vw;
+      left: 0;
+      position: absolute;
+      transition: width .3s ease-in;
+  }
+  .nav-item {
+    margin-left: 1vw;
+  }
+  .nav-link.active::after {
+    background: var(--maincolor);
+  }
+  .nav-link.active::after {
+    width: 100%;
+  }
+  .nav-link:hover::after{
+    width: 100%;
+  }
+  ::after{
+  box-sizing: border-box;
+  background: black;
+  
+  }
+  
+  @media screen and (max-width:767px) {
+    .navbar-light .navbar-nav .nav-link{
+      font-size: 2.2vw !important;
+    }
+  }
